@@ -29,6 +29,15 @@
 {% block content %}
     <div class="container content">
         {{ page.content }}
+
+        {% if page.publication_list %}
+          <h1>Publications, Reports, and Theses </h1>
+          <table id="pubTable" class="display"></table>
+          <script>
+            bibtexify("{{ SITEURL }}/bib/ref.bib", "pubTable");
+          </script>
+          Generated with <a href="https://github.com/vkaravir/bib-publication-list ">this great tool</a>!
+        {% endif %}
     </div>
 {% endblock %}
 
