@@ -317,6 +317,61 @@ h4:after {
     margin-bottom: 40px;
 }
 
+/* Styles for Figures & Images */
+
+img {
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 4px;
+    float: left;
+    margin: 1em 1em 1em 0;
+    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+}
+img.align-right {
+    float: right;
+    margin: 1em 0 1em 1em;
+}
+
+.content.figure {
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 4px;
+    float: left;
+    margin: 0 1em 1em 0;
+    box-shadow: 4px 4px 4px 0px rgba(128, 128, 128, 0.5);
+}
+.content.figure.align-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.content.figure.align-left {
+    float: left;
+}
+.content.figure img {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+
+    float: left;
+}
+.content.figure p.caption {
+    margin: 0;
+    font-size: 80%;
+    padding: 4px;
+    float: left;
+    text-align: left;
+}
+.content.figure div.legend {
+    padding: 4px;
+    font-size: 80%;
+    color: #aaa;
+    font-style: italic;
+
+    float: left;
+}
+
 /* Menu */
 .menu{
   font-size: 14px;
